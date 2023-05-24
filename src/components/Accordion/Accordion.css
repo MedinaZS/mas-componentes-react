@@ -1,0 +1,6 @@
+/* .accordion-button::after {
+	background-image: url("path_to_image");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("path_to_image");
+} */

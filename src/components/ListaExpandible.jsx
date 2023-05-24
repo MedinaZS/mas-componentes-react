@@ -10,6 +10,7 @@ const ListaExpandible = ({ index, lista, isListaActive, setListaActive }) => {
         setIndexActive((indexItem == indexActive) ? null : indexItem)
         
         //Setear el arcordion actual clickeado
+        // Se controla si existe ya que es un componente que se reutiliza
         setListaActive(index)
     }
 
@@ -20,7 +21,6 @@ const ListaExpandible = ({ index, lista, isListaActive, setListaActive }) => {
         }
 
     }, [isListaActive])
-
 
 
     return (

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: ${props => (props.bgcolor && !props.$outlined && !props.$link) ? (props.$outlined || props.$link ? 'transparent' : props.bgcolor) : (props.$outlined || props.$link ? 'transparent' : props.bgcolor)};
+  background-color: ${props => (props.bgcolor) ? (props.$outlined || props.$link ? 'white' : props.bgcolor) : ''};
   color: ${props => props.color ? props.color : props.bgcolor};
   font-size: 16px;
   padding: 4px 20px;
@@ -14,7 +14,7 @@ const Button = styled.button`
   text-decoration: ${props => props.$link ? (props.$textdecorationnone ? 'none' : 'underline') : 'none'};
  
   &:hover{
-       border-color : ${props => (props.$disabled ? 'inherit' : (props.$outlined ? 'white' : (props.$link ? 'transparent' : props.bgcolor)))};
+       border-color : ${props => (props.$disabled ? 'inherit' : (props.$outlined ? 'white' : (props.$link ? 'transparent' : (props.$borderColor ? props.$borderColor : (props.bgcolor ? props.bgcolor : 'black'))))) };
        background-color : ${props => (!props.$disabled && !props.$link && props.$outlined) ? props.bgcolor : ''};
        color : ${props => (!props.$disabled && !props.$link && props.$outlined) ? 'white' : ''};
        opacity : ${props => (!props.$disabled && !props.$link) ? '.8' : ''};
@@ -22,3 +22,4 @@ const Button = styled.button`
   ;
 
 export default Button;
+

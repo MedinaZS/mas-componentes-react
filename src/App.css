@@ -114,3 +114,20 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Accordion icon */
+/* .accordion-button::after {
+	background-image: none
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: none
+}
+
+
+.accordion-button:not(.accordion-minus-plus)::after {
+	background-image: none
+}
+.accordion-button:not(.collapsed):not(.accordion-minus-plus)::after {
+	background-image: none
+}  */
+

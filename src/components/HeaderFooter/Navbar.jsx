@@ -3,7 +3,7 @@ import Button from "./Button"
 const Navbar = ({ logo, links }) => {
  
     return (
-        <div className="navbar-custom">
+        <nav className="navbar-custom">
             <div className="container navbar-custom">
                 <div className="navbar-image">
                     <img src={logo} alt="logo" height={50} />
@@ -28,7 +28,7 @@ const Navbar = ({ logo, links }) => {
                     </Button>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 

@@ -1,16 +1,20 @@
 import { useState } from "react"
-import './Accordion.css'
 
 const AccordionItem = ({ elemento }) => {
     const [isActive, setIsActive] = useState(false)
+
+    const icon = (isActive) ? 'bi bi-dash' : 'bi bi-plus'
 
 
     return (
         <div className="accordion-item mb-2">
             <h2 className="accordion-header border-2 ">
-                <button className="accordion-button collapsed bg-primary-subtle" type="button" 
+                <button className="accordion-button collapsed bg-primary-subtle accordion-minus-plus" type="button"
                     onClick={() => setIsActive(!isActive)}>
-                    {elemento.title}
+                    <p className=" my-auto d-flex justify-content-between w-100 align-items-center fs-4">
+                        {elemento.title}
+                        <i className={icon + " text-secondary"}></i>
+                    </p>
                 </button>
             </h2>
 

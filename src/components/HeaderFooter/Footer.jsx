@@ -25,9 +25,9 @@ const Footer = () => {
                     <ul className="list-icon">
                         <li className="list-header"><a href="#">Contact Us</a></li>
                         <div className="mt-auto">
-                            <Button $outlined $borderRadius={'10px'}><i className="bi bi-facebook"></i></Button>
-                            <Button $outlined $borderRadius={'10px'}><i className="bi bi-linkedin"></i></Button>
-                            <Button $outlined $borderRadius={'10px'}><i className="bi bi-twitter"></i></Button>
+                            <Button bgcolor='transparent' color="white" $borderColor={'white'} $borderRadius={'10px'}><i className="bi bi-facebook"></i></Button>
+                            <Button bgcolor='transparent' color="white" $borderColor={'white'} $borderRadius={'10px'}><i className="bi bi-linkedin"></i></Button>
+                            <Button bgcolor='transparent' color="white" $borderColor={'white'} $borderRadius={'10px'}><i className="bi bi-twitter"></i></Button>
                         </div>
                     </ul>
 

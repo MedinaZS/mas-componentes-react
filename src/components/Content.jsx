@@ -1,23 +1,55 @@
 import Accordion from './Accordion/Accordion'
+import Banner from './Header/Banner'
+import ButtonList from './Header/ButtonList'
+import Navbar from './Header/Navbar'
 import List from './List'
 import Card from './cards/Card'
 
 const Content = () => {
+    const navlinks = [
+        { text: 'Products', url: '#' },
+        { text: 'Resources', url: '#' },
+        { text: 'About us', url: '#' },
+        { text: 'Contact us', url: '#' }
+    ]
+
+    const imgurl = "https://res.cloudinary.com/dhzoxdo6q/image/upload/v1685025897/Roshka/react-white_hcr6av.png"
+
+    const banner = {
+        title: "Work less,\n achieve more.",
+        description: "Our technology is the key to unlocking higher sales and better service. We stand behind it with a satisfaction guarantee - try it risk-free and see the results for yourself!"
+    }
+
     return (
-        <div className="container my-3">
-            {/* Lista expandible */}
-            <List/>
+        <>
+            <Navbar links={navlinks} logo={imgurl} />
+            <div className="container mb-5 pb-5">
 
-            <hr className="my-5" />
+                <Banner title={banner.title} description={banner.description} />
 
-            {/* Card con imagenes y texto */}
-            <Card />
+                {/* Lista expandible */}
+                <h2 className='text-center mt-5'>Lista expandible</h2>
+                <hr />
+                <List />
 
-            <hr className="my-5" />
+                {/* Card con imagenes y texto */}
+                <h2 className='text-center mt-5'>Card - Imagenes y texto</h2>
+                <hr />
+                <div className='d-flex justify-content-center'>
+                    <Card />
+                </div>
 
-            <Accordion/>
+                {/* Card con imagenes y texto */}
+                <h2 className='text-center mt-5'>Lista expandible multiple</h2>
+                <hr />
+                <Accordion />
 
-        </div>
+                <h2 className='text-center mt-5'>Botones</h2>
+                <hr />
+                <ButtonList />
+
+            </div>
+        </>
     )
 }
 

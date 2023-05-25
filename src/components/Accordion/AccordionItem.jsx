@@ -8,7 +8,7 @@ const AccordionItem = ({ elemento }) => {
     return (
         <div className="accordion-item mb-2">
             <h2 className="accordion-header border-2 ">
-                <button className="accordion-button collapsed plus-minus bg-primary-subtle" type="button" 
+                <button className="accordion-button collapsed bg-primary-subtle" type="button" 
                     onClick={() => setIsActive(!isActive)}>
                     {elemento.title}
                 </button>

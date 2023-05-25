@@ -4,3 +4,7 @@
 .accordion-button:not(.collapsed)::after {
 	background-image: url("path_to_image");
 } */
+
+.bg-blue-light{
+	background-color: #e1e8f5;
+}

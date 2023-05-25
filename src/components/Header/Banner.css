@@ -1,0 +1,25 @@
+.banner {
+    background: linear-gradient(167.85deg, rgb(33, 172, 253) 0%, rgb(2, 105, 207) 10%, rgba(3, 28, 53)  60%);
+    padding: 60px 150px;
+    display: flex;
+    margin: 10px 0;
+    border-radius: 15px;
+}
+
+
+.banner-title{
+    color: white;
+    font-weight: bolder;
+    white-space: pre-line;
+    flex: 1 1 0;
+}
+
+.banner-body{
+    color: lightgray;
+    flex: 1 1 0;
+    font-size: 1.2em;
+}
+
+.banner-description{
+    margin-bottom: 30px;
+}

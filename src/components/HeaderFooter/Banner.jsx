@@ -1,9 +1,6 @@
-import "./Banner.css"
 import Button from "./Button"
 
 const Banner = ({ title, description }) => {
-
-  // const titleformato = title.replace(",","<br/>")
 
   return (
     <div className="banner">

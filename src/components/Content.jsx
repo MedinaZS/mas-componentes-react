@@ -1,8 +1,9 @@
 import Accordion from './Accordion/Accordion'
-import Banner from './Header/Banner'
-import ButtonList from './Header/ButtonList'
-import Navbar from './Header/Navbar'
-import List from './List'
+import Footer from './HeaderFooter/Footer'
+import Banner from './HeaderFooter/Banner'
+import ButtonList from './HeaderFooter/ButtonList'
+import Navbar from './HeaderFooter/Navbar'
+import List from './Expandable_List/List'
 import Card from './cards/Card'
 
 const Content = () => {
@@ -19,6 +20,8 @@ const Content = () => {
         title: "Work less,\n achieve more.",
         description: "Our technology is the key to unlocking higher sales and better service. We stand behind it with a satisfaction guarantee - try it risk-free and see the results for yourself!"
     }
+
+   
 
     return (
         <>
@@ -49,6 +52,8 @@ const Content = () => {
                 <ButtonList />
 
             </div>
+
+            <Footer />
         </>
     )
 }

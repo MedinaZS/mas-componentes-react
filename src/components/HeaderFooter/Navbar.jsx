@@ -1,8 +1,7 @@
 import Button from "./Button"
-import "./Navbar.css"
 
 const Navbar = ({ logo, links }) => {
-    console.log(links)
+ 
     return (
         <div className="navbar-custom">
             <div className="container navbar-custom">
